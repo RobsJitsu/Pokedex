@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pr-br">
 
@@ -53,4 +54,61 @@
     </footer>
     <script src="/js/script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <nav>
+        </div>  
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/cadastro">Cadastro</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1><%= pokemon.nome %> - <%= pokemon.numero %></h1>
+    </header>
+
+    <main>
+        <section class="containerdetalhes">
+            <section>
+                <img src="<%= pokemon.imagem %>" class="imagempoke" alt="Pokemon">
+            </section>
+            <section class="cont">
+                <div class="descricao">
+                    <p><%= pokemon.descricao %></p>
+                </div>
+                <div class="detalhespoke">
+                    <p><strong>Altura:</strong> <%= pokemon.altura %></p>
+                    <p><strong>Categoria:</strong> <%= pokemon.categoria %></p>
+                    <p><strong>Peso:</strong> <%= pokemon.peso %></p>
+                    <p><strong>Habilidade:</strong> <%= pokemon.habilidade %></p>
+                </div>
+                <div class="tipopoke">
+                    <p class="titulo">Tipo:</p>
+                    <p class="destaque"><%= pokemon.tipo %></p>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+>>>>>>> 9c121fe9826ad47db00a8ed910b10408e41596ff
 </html>
